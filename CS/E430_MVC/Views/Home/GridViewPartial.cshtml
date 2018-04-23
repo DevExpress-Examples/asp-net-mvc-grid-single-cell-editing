@@ -1,0 +1,45 @@
+
+@Html.DevExpress().GridView(settings => {
+    settings.Name = "GridView";
+    settings.KeyFieldName = "Id";
+    settings.CallbackRouteValues = new { Controller = "Home", Action = "GridViewPartial" };
+    settings.Width = Unit.Percentage(100);
+    
+    settings.Columns.Add(column => {
+        column.FieldName = "C1";
+        column.Width = Unit.Percentage(20);
+    });
+    settings.Columns.Add(column => {
+        column.FieldName = "C2";
+        column.ColumnType = MVCxGridViewColumnType.SpinEdit;
+        column.Width = Unit.Percentage(20);
+    });
+    settings.Columns.Add(column => {
+        column.FieldName = "C3";
+        column.ColumnType = MVCxGridViewColumnType.CheckBox;
+        column.Width = Unit.Percentage(20);
+    });
+    settings.Columns.Add(column => {
+        column.FieldName = "C4";
+        column.ColumnType = MVCxGridViewColumnType.CheckBox;
+        column.Width = Unit.Percentage(20);
+    });
+    settings.Columns.Add(column => {
+        column.FieldName = "C5";
+        column.ColumnType = MVCxGridViewColumnType.DateEdit;
+        column.Width = Unit.Percentage(20);
+    });
+    settings.CellEditorInitialize = (s, e) => {
+        ASPxEdit editor = (ASPxEdit)e.Editor;
+        editor.ValidationSettings.Display = Display.Dynamic;
+    };
+
+    settings.ClientSideEvents.BatchEditEndEditing = "onBatchEditEndEditing";
+
+    settings.Styles.BatchEditModifiedCell.BackColor = System.Drawing.Color.White;
+    settings.SettingsEditing.Mode = GridViewEditingMode.Batch;
+    settings.SettingsEditing.BatchEditSettings.ShowConfirmOnLosingChanges = false;
+    settings.SettingsEditing.BatchEditSettings.StartEditAction = GridViewBatchStartEditAction.Click;
+    settings.Settings.ShowStatusBar = GridViewStatusBarMode.Hidden;
+
+}).Bind(Model).GetHtml()
