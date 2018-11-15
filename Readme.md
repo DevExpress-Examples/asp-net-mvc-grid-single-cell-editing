@@ -1,3 +1,11 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [HomeController.cs](./CS/E430_MVC/Controllers/HomeController.cs) (VB: [HomeController.vb](./VB/E430_MVC/Controllers/HomeController.vb))
+* [Model.cs](./CS/E430_MVC/Models/Model.cs) (VB: [Model.vb](./VB/E430_MVC/Models/Model.vb))
+* [GridViewPartial.cshtml](./CS/E430_MVC/Views/Home/GridViewPartial.cshtml)
+* [Index.cshtml](./CS/E430_MVC/Views/Home/Index.cshtml)
+<!-- default file list end -->
 # How to implement a single cell editing feature in GridView
 
 
