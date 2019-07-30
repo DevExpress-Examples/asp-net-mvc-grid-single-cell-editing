@@ -8,7 +8,7 @@
 <!-- default file list end -->
 # How to implement a single cell editing feature in GridView
 <!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/t498424)**
+**[[Run Online]](https://codecentral.devexpress.com/t498424/)**
 <!-- run online end -->
 
 
