@@ -3,22 +3,31 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T498424)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-<!-- default file list -->
-*Files to look at*:
+# GridView for ASP.NET MVC - How to implement a single cell edit feature
+<!-- run online -->
+**[[Run Online]](https://codecentral.devexpress.com/t498424/)**
+<!-- run online end -->
+
+This example demonstrates how to edit a grid cell in batch mode and update the data source on a callback.
+
+Follow the steps below to configure a single cell's edit functionality:
+
+1. Place GridView with the enabled Batch Edit mode on the page.
+2. Handle the [BatchEditEndEditing](https://docs.devexpress.com/AspNet/js-ASPxClientGridView.BatchEditEndEditing) event. In the handler, collect the information about the edited row and send the information to the server side. Use the jQuery.ajax method for this.
+3. In the controller action, update the data source with the new data and return the result string (OK or the error message).
+4. Use the success handler to return the focus to the last edited cell if something went wrong. For example, a server-side validation error.
+
+## Files to Review
 
 * [HomeController.cs](./CS/E430_MVC/Controllers/HomeController.cs) (VB: [HomeController.vb](./VB/E430_MVC/Controllers/HomeController.vb))
 * [Model.cs](./CS/E430_MVC/Models/Model.cs) (VB: [Model.vb](./VB/E430_MVC/Models/Model.vb))
 * [GridViewPartial.cshtml](./CS/E430_MVC/Views/Home/GridViewPartial.cshtml)
 * [Index.cshtml](./CS/E430_MVC/Views/Home/Index.cshtml)
-<!-- default file list end -->
-# How to implement a single cell editing feature in GridView
-<!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/t498424/)**
-<!-- run online end -->
 
+## Documentation
 
-When a cell is modified, a custom callback is sent via component ASPxCallback and the grid data source is updated manually.<br>The steps to implement are:<br>1. Place GridView with the enabled Batch Edit mode on the page;<br>2. Handle the <a href="https://documentation.devexpress.com/#AspNet/DevExpressWebScriptsASPxClientGridView_BatchEditEndEditingtopic">ASPxClientGridView.BatchEditEndEditing</a> event;<br>3. In the BatchEditEndEditing event handler, collect the information about the edited row and send the information to the server side. Use the jQuery.ajax method for this.<br>4. In the controller action, update the data source with the new data and return the result string (OK or the error message);<br>5. Use the success handler to return the focus to the last edited cell if something went wrong. For example, a server-side validation error.<br><br>See also: <a href="https://www.devexpress.com/Support/Center/p/e430">How to implement a single cell editing feature in the ASPxGridView</a>
+* [Grid in Batch Edit Mode](https://docs.devexpress.com/AspNetMvc/16147/components/grid-view/data-editing-and-validation/batch-edit)
 
-<br/>
+## More Examples
 
-
+* [Grid View for ASP.NET Web Forms - How to implement a single cell edit feature](https://github.com/DevExpress-Examples/asp-net-web-forms-grid-single-cell-editing)
