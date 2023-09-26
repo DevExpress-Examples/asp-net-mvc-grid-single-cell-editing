@@ -5,7 +5,7 @@
 <!-- default badges end -->
 # GridView for ASP.NET MVC - How to implement a single cell edit feature
 <!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/t498424/)**
+**[[Run Online]](https://codecentral.devexpress.com/128551606/)**
 <!-- run online end -->
 
 This example demonstrates how to edit a grid cell in batch mode and update the data source on a callback.
