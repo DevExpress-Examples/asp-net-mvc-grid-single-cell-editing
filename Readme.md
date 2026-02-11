@@ -30,7 +30,7 @@ Follow the steps below to configure a single cell's edit functionality:
 
 * [Grid View for ASP.NET Web Forms - How to implement a single cell edit feature](https://github.com/DevExpress-Examples/asp-net-web-forms-grid-single-cell-editing)
 <!-- feedback -->
-## Does This Example Address Your Development Requirements/Objectives?
+## Does this example address your development requirements/objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=asp-net-mvc-grid-single-cell-editing&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=asp-net-mvc-grid-single-cell-editing&~~~was_helpful=no)
 
